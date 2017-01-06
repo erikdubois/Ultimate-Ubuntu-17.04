@@ -1,0 +1,19 @@
+If you do not have it yet.
+
+sudo pacman -S gnome-disks
+
+Run it.
+
+Click on the "DATA" harddisk.
+
+sda = ssd
+sdb = sata harddisk
+
+Click on the wheels sign and go for edit mount options.
+
+Automatic Mount Options is OFF
+
+ADD "comment="  before x-gvfs-show
+
+
+Take a look at the pictures
