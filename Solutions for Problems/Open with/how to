@@ -1,6 +1,0 @@
-make ~.config/caja/scripts/open_desktop_file
-
-inside 
-
-#!/bin/sh
-pluma $CAJA_SCRIPT_SELECTED_URIS
