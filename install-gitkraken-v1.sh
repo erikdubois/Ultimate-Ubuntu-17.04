@@ -12,13 +12,22 @@
 ##################################################################################################################
 
 
-# Downloading and installing latest variety
-sudo add-apt-repository ppa:peterlevi/ppa -y
-sudo apt-get update
-sudo apt-get install variety -y
+rm /tmp/gitkraken-amd64.deb
 
+wget https://www.gitkraken.com/download/linux-deb -O /tmp/gitkraken-amd64.deb
+sudo dpkg -i /tmp/gitkraken-amd64.deb
+
+rm /tmp/gitkraken-amd64.deb
+
+echo "Install manually until fixed - deb is correct!!"
+
+echo "fixing hardcoded icon"
+old="Icon=app"
+new="Icon=gitkraken"
+location="/usr/share/applications/gitkraken.desktop"
+sudo sed -i s/$old/$new/g $location
 
 
 echo "################################################################"
-echo "###################    variety installed   #####################"
+echo "###################    T H E   E N D      ######################"
 echo "################################################################"

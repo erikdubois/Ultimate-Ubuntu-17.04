@@ -12,13 +12,21 @@
 ##################################################################################################################
 
 
-# Downloading and installing latest variety
-sudo add-apt-repository ppa:peterlevi/ppa -y
-sudo apt-get update
-sudo apt-get install variety -y
+rm /tmp/virtual-box.deb
+
+wget http://download.virtualbox.org/virtualbox/5.1.12/virtualbox-5.1_5.1.12-112440~Ubuntu~xenial_amd64.deb -O /tmp/virtual-box.deb
+#curl -o /tmp/code_1.5.3-1474533365_amd64.deb https://code.visualstudio.com/docs/?dv=linux64_deb
+sudo dpkg -i /tmp/virtual-box.deb
+#gdebi /tmp/code_1.5.3-1474533365_amd64.deb
 
 
+rm /tmp/virtual-box.deb
+
+
+##################################################################################################################
 
 echo "################################################################"
-echo "###################    variety installed   #####################"
+echo "###################    T H E   E N D      ######################"
 echo "################################################################"
+
+

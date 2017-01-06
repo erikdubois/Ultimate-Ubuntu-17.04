@@ -12,13 +12,14 @@
 ##################################################################################################################
 
 
-# Downloading and installing latest variety
-sudo add-apt-repository ppa:peterlevi/ppa -y
-sudo apt-get update
-sudo apt-get install variety -y
+rm /tmp/discord-canary-0.0.9.deb
 
+wget https://discordapp.com/api/download/canary?platform=linux -O /tmp/discord-canary-0.0.9.deb
+sudo dpkg -i /tmp/discord-canary-0.0.9.deb
+
+rm /tmp/discord-canary-0.0.9.deb
 
 
 echo "################################################################"
-echo "###################    variety installed   #####################"
+echo "###################    T H E   E N D      ######################"
 echo "################################################################"

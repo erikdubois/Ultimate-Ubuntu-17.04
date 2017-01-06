@@ -12,13 +12,17 @@
 ##################################################################################################################
 
 
-# Downloading and installing latest variety
-sudo add-apt-repository ppa:peterlevi/ppa -y
-sudo apt-get update
-sudo apt-get install variety -y
 
+# repo for spotify
 
+sudo add-apt-repository -y ppa:dawidd0811/neofetch
+
+# getting new info of this new repo
+sudo apt-get -y update
+
+# installing
+sudo apt install neofetch -y
 
 echo "################################################################"
-echo "###################    variety installed   #####################"
+echo "###################   neofetch installed   #####################"
 echo "################################################################"

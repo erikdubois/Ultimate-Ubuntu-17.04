@@ -11,14 +11,24 @@
 #
 ##################################################################################################################
 
-
-# Downloading and installing latest variety
-sudo add-apt-repository ppa:peterlevi/ppa -y
-sudo apt-get update
-sudo apt-get install variety -y
+# will not install to error....????
 
 
+rm /tmp/atom-amd64.deb
+
+wget https://atom.io/download/deb -O /tmp/atom-amd64.deb
+#curl -o /tmp/code_1.5.3-1474533365_amd64.deb https://code.visualstudio.com/docs/?dv=linux64_deb
+sudo dpkg -i /tmp/atom-amd64.deb
+#gdebi /tmp/code_1.5.3-1474533365_amd64.deb
+
+
+rm /tmp/atom-amd64.deb
+
+
+##################################################################################################################
 
 echo "################################################################"
-echo "###################    variety installed   #####################"
+echo "###################    T H E   E N D      ######################"
 echo "################################################################"
+
+

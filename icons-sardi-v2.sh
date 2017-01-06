@@ -12,13 +12,21 @@
 ##################################################################################################################
 
 
-# Downloading and installing latest variety
-sudo add-apt-repository ppa:peterlevi/ppa -y
-sudo apt-get update
-sudo apt-get install variety -y
+
+rm -rf /tmp/sardi
+wget -O /tmp/sardi.tar.gz "https://sourceforge.net/projects/sardi/files/latest/download?source=files"
+mkdir /tmp/sardi
+tar -zxf /tmp/sardi.tar.gz -C /tmp/sardi
+rm /tmp/sardi.tar.gz
+
+# if there is no hidden folder then make one
+[ -d $HOME"/.icons" ] || mkdir -p $HOME"/.icons"
+
+cp -rf /tmp/sardi/* ~/.icons/
+rm -rf /tmp/sardi
 
 
 
 echo "################################################################"
-echo "###################    variety installed   #####################"
+echo "###################    icons sardi done   ######################"
 echo "################################################################"

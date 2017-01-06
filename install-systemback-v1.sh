@@ -12,13 +12,11 @@
 ##################################################################################################################
 
 
-# Downloading and installing latest variety
-sudo add-apt-repository ppa:peterlevi/ppa -y
+sudo apt-add-repository --yes ppa:nemh/systemback
 sudo apt-get update
-sudo apt-get install variety -y
-
+sudo apt-get install systemback -y
 
 
 echo "################################################################"
-echo "###################    variety installed   #####################"
+echo "###################    T H E   E N D      ######################"
 echo "################################################################"

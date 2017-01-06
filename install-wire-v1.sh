@@ -12,18 +12,13 @@
 ##################################################################################################################
 
 
+rm /tmp/wire_2.11.2661_amd64.deb
 
-rm -rf /tmp/sardi
-wget -O /tmp/sardi.tar.gz "https://sourceforge.net/projects/sardi/files/latest/download?source=files"
-mkdir /tmp/sardi
-tar -zxvf /tmp/sardi.tar.gz -C /tmp/sardi
-rm /tmp/sardi.tar.gz
+wget https://wire-app.wire.com/linux/wire_2.11.2685_amd64.deb -O /tmp/wire_2.11.2661_amd64.deb
+sudo apt install -y libjpeg62:i386
+sudo dpkg -i /tmp/wire_2.11.2661_amd64.deb
 
-# if there is no hidden folder then make one
-[ -d $HOME"/.icons" ] || mkdir -p $HOME"/.icons"
-
-cp -rf /tmp/sardi/* ~/.icons/
-rm -rf /tmp/sardi
+rm /tmp/wire_2.11.2661_amd64.deb
 
 
 

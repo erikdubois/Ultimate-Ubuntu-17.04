@@ -11,14 +11,9 @@
 #
 ##################################################################################################################
 
-
-# Latest builds of cinnamon and nemo
-
-wget https://github.com/phw/peek/releases/download/v0.7.2/peek-0.7.2-Linux.deb
-sudo apt install libsdl1.2debian ffmpeg libavdevice-ffmpeg56 -y
-sudo dpkg -i peek-0.7.2-Linux.deb
-rm peek-0.7.2-Linux.deb
-
+sudo add-apt-repository ppa:clipgrab-team/ppa -y
+sudo apt-get update
+sudo apt-get install clipgrab -y
 
 echo "################################################################"
 echo "###################    T H E   E N D      ######################"

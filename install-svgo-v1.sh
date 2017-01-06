@@ -11,14 +11,13 @@
 #
 ##################################################################################################################
 
+sudo apt install -y npm nodejs
+sudo npm install -g svgo
+sudo ln -s /usr/bin/nodejs /usr/bin/node
 
-# Downloading and installing latest variety
-sudo add-apt-repository ppa:peterlevi/ppa -y
-sudo apt-get update
-sudo apt-get install variety -y
 
 
 
 echo "################################################################"
-echo "###################    variety installed   #####################"
+echo "##############       svgo installed      #################"
 echo "################################################################"

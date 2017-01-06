@@ -11,18 +11,17 @@
 #
 ##################################################################################################################
 
+# Downloading and installing latest teamviewer
+
+rm /tmp/skypeforlinux-64-alpha.deb
+
+wget https://go.skype.com/skypeforlinux-64-alpha.deb -O /tmp/skypeforlinux-64-alpha.deb
+sudo apt install -y libjpeg62:i386
+sudo dpkg -i /tmp/skypeforlinux-64-alpha.deb
+
+rm /tmp/skypeforlinux-64-alpha.deb
 
 
-# repo for spotify
-sudo add-apt-repository "deb http://repository.spotify.com stable non-free" -y
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys D2C19886
-
-
-# getting new info of this new repo
-sudo apt-get -y update
-
-# installing
-sudo apt-get install -y spotify-client -y
 
 echo "################################################################"
 echo "###################    T H E   E N D      ######################"

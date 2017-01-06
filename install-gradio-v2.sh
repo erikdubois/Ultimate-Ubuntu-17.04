@@ -12,13 +12,20 @@
 ##################################################################################################################
 
 
-# Downloading and installing latest variety
-sudo add-apt-repository ppa:peterlevi/ppa -y
-sudo apt-get update
-sudo apt-get install variety -y
+rm -rf /tmp/gradio
 
+sudo apt-get install -y build-essential autoconf automake intltool libsoup2.4-dev
+sudo apt-get install -y libjson-glib-dev libgstreamer1.0-dev valac libgstreamer-plugins-base1.0-dev libgtk-3-dev
+sudo apt-get -f install
+git clone https://github.com/haecker-felix/gradio /tmp/gradio
+cd /tmp/gradio
+sh autogen.sh --prefix=/usr
+make
+sudo make install
+
+rm -rf /tmp/gradio
 
 
 echo "################################################################"
-echo "###################    variety installed   #####################"
+echo "###################    gradio installed #####################"
 echo "################################################################"

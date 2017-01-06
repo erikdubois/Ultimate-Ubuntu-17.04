@@ -12,13 +12,13 @@
 ##################################################################################################################
 
 
-# Downloading and installing latest variety
-sudo add-apt-repository ppa:peterlevi/ppa -y
-sudo apt-get update
-sudo apt-get install variety -y
 
+
+sudo add-apt-repository ppa:gerardpuig/ppa -y
+sudo apt update
+sudo apt install -y ubuntu-cleaner
 
 
 echo "################################################################"
-echo "###################    variety installed   #####################"
+echo "###################    T H E   E N D      ######################"
 echo "################################################################"
